@@ -1,10 +1,19 @@
+<?php
+
+if($_POST["message"]) {
+
+mail("cissy59@sjtu.edu.cn", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
+
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+
+
+<html lang="en">
 	<head>
 		<title>Miao(Cissy) Wang</title>
 		<meta charset="utf-8" />
@@ -62,6 +71,7 @@
 								<h2 class="major">Photographs</h2>
 								<span class="image main"><img src="images/picme.jpg" alt="" /></span>
 								<p>In my free time, I like to travel around and take photos. I hope you enjoy these beautiful seneries.</p>
+								<img src="images/pictree2.jpg" alt="The fall seneries in Qingjiao Park" width="500" height="600">
 								<span class="image main"><img src="images/pictree.jpg" alt="" /></span>
 								<span class="image main"><img src="images/picwindow.jpg" alt="" /></span>
 								<span class="image main"><img src="images/picbee.jpg" alt="" /></span>
@@ -72,7 +82,7 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form method="post" action="subscriberform.php">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -346,7 +356,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright"> website of Miao Wang </p>
 					</footer>
 
 			</div>

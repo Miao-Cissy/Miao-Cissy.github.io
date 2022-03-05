@@ -1,16 +1,5 @@
-<?php
-
-if($_POST["message"]) {
-
-mail("cissy59@sjtu.edu.cn", "Here is the subject line",
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-}
-
-?>
-
 <!DOCTYPE HTML>
+
 
 
 <html lang="en">
@@ -102,6 +91,18 @@ $_POST["insert your message here"]. "From: an@email.address");
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
+
+								<?php
+
+									if($_POST["message"]) {
+
+									mail("cissy59@sjtu.edu.cn", "You recieve message from your website",
+
+									$_POST["Message"]. "From: Email");
+
+									}
+
+									?>
 								<ul class="icons">
 									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
